@@ -20,7 +20,7 @@ using namespace std;
   int iLowH = 0;
  int iHighH = 179;
 
-  int iLowS = 0; //162
+  int iLowS = 130; //162, 130=better, org=0
  int iHighS = 255;
 
   int iLowV = 0;
