@@ -1,0 +1,54 @@
+OpenCV Error: Assertion failed (count >= 4) in cvFindHomography, file /tmp/buildd/ros-hydro-opencv2-2.4.9-2raring-20140819-1721/modules/calib3d/src/fundam.cpp, line 235
+terminate called after throwing an instance of 'cv::Exception'
+  what():  /tmp/buildd/ros-hydro-opencv2-2.4.9-2raring-20140819-1721/modules/calib3d/src/fundam.cpp:235: error: (-215) count >= 4 in function cvFindHomography
+
+Aborted (core dumped)
+
+
+
+
+
+
+
+darkriddle@VikingStorm:~/Repository/git/RoVi2_PicknPlace/Vision/contourOfColourFeatureDetection$ ./combined 
+test
+[VCD: 0, VCC: 3]
+[OCD: 0, OCC: 3]
+OpenCV Error: Unsupported format or combination of formats (type=0
+) in buildIndex_, file /tmp/buildd/ros-hydro-opencv2-2.4.9-2raring-20140819-1721/modules/flann/src/miniflann.cpp, line 315
+terminate called after throwing an instance of 'cv::Exception'
+  what():  /tmp/buildd/ros-hydro-opencv2-2.4.9-2raring-20140819-1721/modules/flann/src/miniflann.cpp:315: error: (-210) type=0
+ in function buildIndex_
+
+Aborted (core dumped)
+
+
+
+
+
+
+
+
+
+
+
+
+
+end step 1
+descriptors_object : CV_32FC1
+descriptors_scene : CV_32FC1
+new_descriptors_object : CV_32FC1
+new_descriptors_scene : CV_32FC1
+end step 2
+end step 3
+-- Max dist : 0.134046
+-- Min dist : 0.00232665
+end step 4
+end step 5
+OpenCV Error: Assertion failed (count >= 4) in cvFindHomography, file /tmp/buildd/ros-hydro-opencv2-2.4.9-2raring-20140819-1721/modules/calib3d/src/fundam.cpp, line 235
+terminate called after throwing an instance of 'cv::Exception'
+  what():  /tmp/buildd/ros-hydro-opencv2-2.4.9-2raring-20140819-1721/modules/calib3d/src/fundam.cpp:235: error: (-215) count >= 4 in function cvFindHomography
+
+Aborted (core dumped)
+darkriddle@VikingStorm:~/Repository/git/RoVi2_PicknPlace/Vision/contourOfColourFeatureDetection$ 
+
