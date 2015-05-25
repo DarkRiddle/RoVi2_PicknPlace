@@ -12,7 +12,7 @@
 #include "detectFeature.hpp"
 #include "util.hpp"
 //using namespace cv;	//already defined
-using namespace ros;
+
 using namespace image_transport;
 
 FindContour fc;
@@ -39,12 +39,12 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg){
 
 int main(int argc, char **argv){
 	//ros stuff//
-	init(argc, argv, "image_listener");
-	NodeHandle nh;
+	ros::init(argc, argv, "image_listener");
+	ros::NodeHandle nh;
 	namedWindow("view",WINDOW_NORMAL);
 
 	startWindowThread();
-	ImageTransport it(nh);
+	image_transport::ImageTransport it(nh);
 	
 	//vision stuff//
 	namedWindow("ObjectContour");
@@ -70,11 +70,11 @@ int main(int argc, char **argv){
 	Mat vid_matches;
 	
 	//Subscriber sub = it.subscribe("stereo_camera/left/image_raw", 1, imageCallback);
+	image_transport::Subscriber sub = it.subscribe("stereo_camera/left/image_raw", 1, imageCallback);
 	
 	//try
 	while(1){
 		frameCount++;
-		Subscriber sub = it.subscribe("stereo_camera/left/image_raw", 1, imageCallback);
 		vid_matches = df.Process(obj_contour, vid_contour);
 		imshow("Video",vid_matches);
 		
@@ -82,7 +82,7 @@ int main(int argc, char **argv){
 		if( c == 27 ) break;
 	}
 	
-	spin();
+	ros::spin();
 	destroyAllWindows();
 	
     return 0;
