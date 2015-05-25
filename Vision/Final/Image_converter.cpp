@@ -15,6 +15,9 @@
 using namespace ros;
 using namespace image_transport;
 
+Mat vid_colour;
+Mat vid_contour;
+
 void imageCallback(const sensor_msgs::ImageConstPtr& msg){
 	FindContour fc;
 	DetectColour dc;
@@ -54,7 +57,6 @@ int main(int argc, char **argv){
 	imshow("ObjectContour",obj_contour);
 	
 	//video
-	Mat vid_contour;
 	int frameCount=0;
 	//VideoCapture camera(0);
 	/*if(!camera.isOpened()) {
@@ -64,7 +66,6 @@ int main(int argc, char **argv){
 	int kernel_length=3;
 	Mat camFrame;
 	
-	Mat vid_colour;
 	Mat vid_matches;
 	
 	//Subscriber sub = it.subscribe("stereo_camera/left/image_raw", 1, imageCallback);
