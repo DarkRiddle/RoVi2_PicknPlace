@@ -15,13 +15,14 @@
 using namespace ros;
 using namespace image_transport;
 
+FindContour fc;
+DetectColour dc;
+DetectFeature df;
+
 Mat vid_colour;
 Mat vid_contour;
 
 void imageCallback(const sensor_msgs::ImageConstPtr& msg){
-	FindContour fc;
-	DetectColour dc;
-	DetectFeature df;
 	try{
 		Mat camFrame;
 		camFrame=cv_bridge::toCvShare(msg, "bgr8")->image;
@@ -50,7 +51,7 @@ int main(int argc, char **argv){
 	namedWindow("Video");
 	
 	//image
-	FindContour fc;
+	//FindContour fc;
 	Mat obj_contour;
 	obj_contour = fc.Process("0001.png",true);
 	
