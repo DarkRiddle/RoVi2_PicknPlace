@@ -1,0 +1,35 @@
+%%%%%     	I Preamble			%%%
+\usepackage{graphicx}
+
+
+%%%%% 		image enviroment		%%%
+\begin{figure}[htb]
+
+
+\includegraphics[width=0.8\textwidth]{image.png}
+
+
+\label{fig:awesome_image}
+
+\end{figure}
+
+
+
+%%%%%		Commands %%%
+
+\includegraphics[]{chick}		% Gør det muligt at sætte billede ind
+
+%%% 		Parameter to the indcludegraphics packege
+width=xx			% Specify the preferred width of the imported image to xx.
+height=xx			% Specify the preferred height of the imported image to xx.
+keepaspectratio			% This can be set to either true or false. When true, it will scale the image according to both height and width, but will not distort the image, so that neither width nor height are exceeded.
+scale=xx			% Scales the image by the desired scale factor. e.g, 0.5 to reduce by half, or 2 to double
+angle=xx			% This option can rotate the image by xx degrees (counter-clockwise)
+trim=l b r t			% This option will crop the imported image by l from the left, b from the bottom, r from the right, and t from the top. Where l, b, r and t are lengths.
+clip				% For the trim option to work, you must set clip=true.
+page=x				%If the image file is a pdf file with multiple pages, this parameter allows you to use a different page than the first
+
+%%%%%		function in enviroment
+\centering						% Centrer Billedet på siden
+\caption{Awesome Image}		% Caption er en tekst man ønsker der skal stå på billedet
+\label{fig:awesome_image}	% Label er navnet på billedet således at man senere kan refere til

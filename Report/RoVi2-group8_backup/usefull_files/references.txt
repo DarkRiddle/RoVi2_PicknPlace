@@ -1,0 +1,17 @@
+Chapters:		\ref{sec:xxx}
+Abstract	-> sec:Abs
+introduction 	-> sec:Intro
+Method		-> sec:Method
+Robot		-> sec:Robot
+Path planning	-> subsec:path
+calibation	-> sec:Cal
+Vision		-> sec:Vision
+Robotics	-> sec:Robotics
+Discussion	-> sec:Dis
+Conclussion	-> sec:Con
+
+
+Figures			\ref{fig:xxx}
+
+Tables			\ref{tab:xxx}
+

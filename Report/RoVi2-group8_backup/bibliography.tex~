@@ -1,0 +1,16 @@
+%%%% example
+%\bibitem{bib:fnf}
+%webpage: Fold 'n fly.
+%\url{http://www.foldnfly.com/index.html#/1-1-1-1-1-1-1-1-2},\\
+%\date21/4-2015
+
+\bibitem{Lanser95robustvideo-based}
+Stefan Lanser and Olaf Munkelt and Christoph Zierl, \emph{Robust Video-Based Object Recognition Using CAD Models},
+Intelligent Autonomous Systems IAS-4, 1995, 529--536.
+
+\bibitem{5329404}
+Dutta, S. and Chaudhuri, B.B., \emph{A Color Edge Detection Algorithm in RGB Color Space},
+Advances in Recent Technologies in Communication and Computing, 2009. ARTCom '09. International Conference on, Oct 2009, 337--340, 10.1109/ARTCom.2009.72.
+
+\bibitem{FlannBasedMatcher}
+OpenCV, \emph{FlannBasedMatcher}, http://docs.opencv.org/, 29-05-2015.
