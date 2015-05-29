@@ -1,0 +1,23 @@
+@INPROCEEDINGS{Lanser95robustvideo-based,
+    author = {Stefan Lanser and Olaf Munkelt and Christoph Zierl},
+    title = {Robust Video-Based Object Recognition Using CAD Models},
+    booktitle = {Intelligent Autonomous Systems IAS-4},
+    year = {1995},
+    pages = {529--536},
+    publisher = {IOS Press}
+}
+@INPROCEEDINGS{5329404, 
+author={Dutta, S. and Chaudhuri, B.B.}, 
+booktitle={Advances in Recent Technologies in Communication and Computing, 2009. ARTCom '09. International Conference on}, 
+title={A Color Edge Detection Algorithm in RGB Color Space}, 
+year={2009}, 
+month={Oct}, 
+pages={337-340}, 
+keywords={computer vision;edge detection;image colour analysis;RGB color space;average maximum color difference value;color image edge detection algorithm;computer vision;edge extraction;image processing;image retrieval;image segmentation;object-based image coding;optimum threshold value;thinning technique;Area measurement;Color;Computer vision;Image coding;Image edge detection;Image processing;Image segmentation;Object recognition;Pattern recognition;Shape measurement;color difference calculation in RGB vector field;color edge detection;edge thinning;smoothing by adaptive median filter}, 
+doi={10.1109/ARTCom.2009.72},}
+@online{FlannBasedMatcher,
+  author = {OpenCV},
+  title = {{OpenCV} FlannBasedMatcher},
+  url = {http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html?highlight=flannbasedmatcher#flannbasedmatcher},
+  urldate = {2015-05-29}
+}
